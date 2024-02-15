@@ -41,14 +41,19 @@ Prerequisite:
 
 🏷️Step 2-
      Paste token in three instance (docker must be installed & service start)
-           
+ ![Screenshot 2024-02-15 160319](https://github.com/Pratikshinde55/DockerSwarm/assets/145910708/733053a9-dff7-47a9-9020-f72d064f9b5b)
+         
+![Screenshot 2024-02-15 160407](https://github.com/Pratikshinde55/DockerSwarm/assets/145910708/a2b2fa49-d1e1-4452-97b0-203eb22c682a)
+
+![Screenshot 2024-02-15 160447](https://github.com/Pratikshinde55/DockerSwarm/assets/145910708/b1b40f3c-5b3b-4753-b732-5035d252066f)
 
 
 🏷️Step 3-
       Here Docker Swarm cluster is created to check use "docker info", om master node 
 
           #docker node ls
-           ![Screenshot 2024-02-15 162810](https://github.com/Pratikshinde55/DockerSwarm/assets/145910708/36a28ee3-7c56-4bac-bc12-55e1abd726f8)
+          
+![Screenshot 2024-02-15 162810](https://github.com/Pratikshinde55/DockerSwarm/assets/145910708/36a28ee3-7c56-4bac-bc12-55e1abd726f8)
 
 
 ⭐Why use Docker swarm ❓
@@ -84,9 +89,9 @@ Prerequisite:
  On Master node:(To start service'Load balancer)
 
     #docker service create --name myweb55 --publish 8080:80 vimal13/apache-webserver-php
+    
+![Screenshot 2024-02-15 163712](https://github.com/Pratikshinde55/DockerSwarm/assets/145910708/2ee50920-f644-46b8-b699-6d8282e656ed)
 
-
-        screnshot------
       #docker service ls <<--- Check service ls
       #docker service ps myweb55 <<-- this show where Task lauch
 
@@ -102,6 +107,7 @@ Prerequisite:
 ❄️check on Google/Browser
    Public IP of master instance + port no.(http://13.201.15.80:8080/)
 
-          screnshot.....
+![Screenshot 2024-02-15 164147](https://github.com/Pratikshinde55/DockerSwarm/assets/145910708/972d9b4b-9646-42cd-9aad-8c7945f29344)
+
     
     
