@@ -32,7 +32,7 @@ Prerequisite:
 
        #yum install docker -y
        #systemctl start docker
-       #docker info <<- show Docker swarm Active or not
+       #docker info 
 
 🏷️Step 1-
   Make one node master node ,the node which want to make master that node Ip address is required
@@ -47,10 +47,12 @@ Prerequisite:
  ![Screenshot 2024-02-15 155752](https://github.com/Pratikshinde55/DockerSwarm/assets/145910708/fa8dafd9-f4f1-4983-85ec-88d8fca9f3c2)
 
 
-    🔔Here get one Token that paste in remaining instance that want to be make worker node
+🔔Here get one Token that paste in remaining instance that want to be make worker node
 
 🏷️Step 2-
-     Paste token in three instance (docker must be installed & service start)
+   
+   
+   Paste token in three instance (docker must be installed & service start)
  ![Screenshot 2024-02-15 160319](https://github.com/Pratikshinde55/DockerSwarm/assets/145910708/733053a9-dff7-47a9-9020-f72d064f9b5b)
          
 ![Screenshot 2024-02-15 160407](https://github.com/Pratikshinde55/DockerSwarm/assets/145910708/a2b2fa49-d1e1-4452-97b0-203eb22c682a)
@@ -59,7 +61,9 @@ Prerequisite:
 
 
 🏷️Step 3-
-      Here Docker Swarm cluster is created to check use "docker info", om master node 
+ 
+ 
+ Here Docker Swarm cluster is created to check use "docker info", om master node 
 
           #docker node ls
           
@@ -67,35 +71,41 @@ Prerequisite:
 
 
 ⭐Why use Docker swarm ❓
-    Swarm master node keep watching on Container or Task ,if any Container goes down for any reason
-    or Fault occurs , Master node auto-matically create same task on any Node.This is known a"fault
-    tolerance".
+
+
+Swarm master node keep watching on Container or Task ,if any Container goes down for any reason or Fault occurs , Master node auto-matically create same task on any Node.This is known a"fault tolerance".
    
-                          💫Load balancer & Scaling on Docker Swarm 💫
+   
+ 💫Load balancer & Scaling on Docker Swarm 💫
 
 ⚡Replication:
-    Swarm cluster give capability to make exact copy of task in another node this concept is called 
-    as Replication.
+
+
+ Swarm cluster give capability to make exact copy of task in another node this concept is called as Replication.
 
 💥Load Balancer:
-    Docker swarm give pre-created set-up of load balancer, In docker Swarm 'Load balancer'term is
-    "Service".
-     "Load Balancer=Service"
+
+
+Docker swarm give pre-created set-up of load balancer, In docker Swarm 'Load balancer'term is "Service".
+"Load Balancer=Service"
         
-    Docker service (Load Balancer) is by default isolated ,It can't connect outside world it only 
-    connect to Cluster nodes, But if we want to make connection to outside world , we use
-    "--publish",patting,expose.
+
+Docker service (Load Balancer) is by default isolated ,It can't connect outside world it only connect to Cluster nodes, But if we want to make connection to outside world , we use"--publish",patting,expose.
 
 🌟Scaling :
-    There are two types of Scaling Vertical scaling and Horizontal scaling,We use Horizontal 
-    scaling.
-    Adding more containers or instance are called as 'Scale-out'& removing Containers
-    or instances is called 'scale-in'.
 
-     🔔To start any service in cluster we use 'Master node',The master node tracks the status of 
-       tasks & monitors the health of the cluster.
+
+There are two types of Scaling Vertical scaling and Horizontal scaling,We use Horizontal scaling.
+
+
+Adding more containers or instance are called as 'Scale-out'& removing Containers or instances is called 'scale-in'.
+
+
+🔔To start any service in cluster we use 'Master node',The master node tracks the status of tasks & monitors the health of the cluster.
 
 🏷️Steps -
+ 
+ 
  On Master node:(To start service'Load balancer)
 
     #docker service create --name myweb55 --publish 8080:80 vimal13/apache-webserver-php
@@ -105,17 +115,18 @@ Prerequisite:
       #docker service ls <<--- Check service ls
       #docker service ps myweb55 <<-- this show where Task lauch
 
-      For scale-out
-
+For scale-out
 
       #docker service scale myweb55=5
 
-      For scale-in
+For scale-in
 
       #docker service scale myweb55=1
 
 ❄️check on Google/Browser
-   Public IP of master instance + port no.(http://13.201.15.80:8080/)
+
+
+Public IP of master instance + port no.(http://13.201.15.80:8080/)
 
 ![Screenshot 2024-02-15 164147](https://github.com/Pratikshinde55/DockerSwarm/assets/145910708/972d9b4b-9646-42cd-9aad-8c7945f29344)
 
