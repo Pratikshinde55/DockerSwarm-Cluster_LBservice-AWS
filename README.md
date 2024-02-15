@@ -2,12 +2,11 @@
 
 
 🌟Docker Swarm on AWS Cloud🌟
-      Swarm is Docker tool used to create Cluster,Docker Swarm mode is built into the Docker
-      Engine.           
+Swarm is Docker tool used to create Cluster,Docker Swarm mode is built into the Docker Engine.           
 
-     Docker swarm have two types of nodes :
-     1.Master node / Controller npde
-     2.Worker node / Slaves node 
+Docker swarm have two types of nodes :
+ 1.Master node / Controller npde
+ 2.Worker node / Slaves node 
 
 ☀️Creating four nodes Swarm cluster☀️
    In this practical Creating Docker cluster , we take four AWS insatnce one of that instane make   
