@@ -34,7 +34,7 @@ Prerequisite:
 
       #docker swarm init  --advertise-addr 172.31.37.180
 
-      ![Screenshot 2024-02-15 155752](https://github.com/Pratikshinde55/DockerSwarm/assets/145910708/fa8dafd9-f4f1-4983-85ec-88d8fca9f3c2)
+ ![Screenshot 2024-02-15 155752](https://github.com/Pratikshinde55/DockerSwarm/assets/145910708/fa8dafd9-f4f1-4983-85ec-88d8fca9f3c2)
 
 
     🔔Here get one Token that paste in remaining instance that want to be make worker node
