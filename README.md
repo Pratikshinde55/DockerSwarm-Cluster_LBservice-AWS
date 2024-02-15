@@ -10,18 +10,25 @@ Docker swarm have two types of nodes :
  
  
  1.Master node / Controller npde
+
+ 
  2.Worker node / Slaves node 
 
 ☀️Creating four nodes Swarm cluster☀️
-   In this practical Creating Docker cluster , we take four AWS insatnce one of that instane make   
-   Master node & remaining nodes make worker node.
+
+ 
+In this practical Creating Docker cluster , we take four AWS insatnce one of that instane make Master node & remaining nodes make worker node.
 
    ![Screenshot 2024-02-15 154046](https://github.com/Pratikshinde55/DockerSwarm/assets/145910708/454417b7-ce3e-4def-b8c0-d9aaede85827)
 
 
 Prerequisite:
-   AWS account & Ec2 instance knowledge
-   In all four instances install docker and start service
+ 
+ 
+ 1.AWS account & Ec2 instance knowledge
+
+ 
+ 2.In all four instances install docker and start service
 
        #yum install docker -y
        #systemctl start docker
