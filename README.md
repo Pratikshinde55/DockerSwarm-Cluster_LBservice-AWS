@@ -5,9 +5,6 @@ Swarm is Docker tool used to create Cluster, Docker Swarm is built into the Dock
 What is Docker swarm cluster:
 
 Cluster means having one or more Master Node and one or more worker node. The master node manage all worker/slave nodes.
- 
-1.Master node/Controller npde
-2.Worker node/Slaves node 
 
 ## Creating four nodes Swarm cluster
  
@@ -104,20 +101,19 @@ Check service ls commnad:
 
     docker service ls 
 
- Check where Task lauch command:
+Check where Task lauch command:
  
-     docker service ps myweb55 
+    docker service ps myweb55 
 
-For scale-out
+For scale-out use command:
 
-      #docker service scale myweb55=5
+    docker service scale myweb55=5
 
-For scale-in
+For scale-in use command:
 
-      #docker service scale myweb55=1
+     docker service scale myweb55=1
 
-❄️check on Google/Browser
-
+## Check on Google/Browser
 
 Public IP of master instance + port no.(http://13.201.15.80:8080/)
 
