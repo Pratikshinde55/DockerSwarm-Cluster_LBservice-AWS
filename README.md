@@ -15,9 +15,8 @@ For this Docker cluster, I take four AWS EC2 Insatnce one of these Instane make 
 
 ### Prerequisite:
  
- 1.AWS account & EC2 Instance 
-
- 2.In all four Instances install Docker and start service
+   1. AWS account & EC2 Instance 
+   2. In all four Instances install Docker and start service
 
 Install Docker command:
 
