@@ -25,15 +25,15 @@ For this Docker cluster, I take four AWS EC2 Insatnce one of these Instane make 
 
 Install Docker command:
 
-   yum install docker -y
+    yum install docker -y
 
 Start Docker services command:
 
-   systemctl start docker
+    systemctl start docker
 
 Check Docker info command:
 
-   docker info 
+    docker info 
 
 🏷️Step 1-
   Make one node master node ,the node which want to make master that node Ip address is required
