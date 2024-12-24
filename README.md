@@ -49,23 +49,21 @@ Docker swarm init command is used to create cluster:
 
 Here get one Token that paste in remaining Instance that want to be make Worker-Node.
 
-## Step: 2
-   
-   
-   Paste token in three instance (docker must be installed & service start)
- ![Screenshot 2024-02-15 160319](https://github.com/Pratikshinde55/DockerSwarm/assets/145910708/733053a9-dff7-47a9-9020-f72d064f9b5b)
+## Step: 2 [Join Worker-Node to Master]
+
+Paste token in three Worker-Node Instances (Docker must be installed & service start):
+
+![Screenshot 2024-02-15 160319](https://github.com/Pratikshinde55/DockerSwarm/assets/145910708/733053a9-dff7-47a9-9020-f72d064f9b5b)
          
 ![Screenshot 2024-02-15 160407](https://github.com/Pratikshinde55/DockerSwarm/assets/145910708/a2b2fa49-d1e1-4452-97b0-203eb22c682a)
 
 ![Screenshot 2024-02-15 160447](https://github.com/Pratikshinde55/DockerSwarm/assets/145910708/b1b40f3c-5b3b-4753-b732-5035d252066f)
 
-
-🏷️Step 3-
+## Step: 3
  
- 
- Here Docker Swarm cluster is created to check use "docker info", om master node 
+Here Docker Swarm Cluster is created to check use "docker info" on the Master-Node Docker swarm. 
 
-          #docker node ls
+    docker node ls
           
 ![Screenshot 2024-02-15 162810](https://github.com/Pratikshinde55/DockerSwarm/assets/145910708/36a28ee3-7c56-4bac-bc12-55e1abd726f8)
 
