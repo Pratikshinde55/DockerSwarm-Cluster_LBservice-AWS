@@ -1,38 +1,39 @@
-# DockerSwarm
+# Docker Swarm Cluster on AWS Cloud
 
+Swarm is Docker tool used to create Cluster, Docker Swarm is built into the Docker Engine.           
 
-🌟Docker Swarm on AWS Cloud🌟
+What is Docker swarm cluster:
 
-
-Swarm is Docker tool used to create Cluster,Docker Swarm mode is built into the Docker Engine.           
-
-Docker swarm have two types of nodes :
+Cluster means having one or more Master Node and one or more worker node. The master node manage all worker/slave nodes.
  
+ 1.Master node/Controller npde
+
+ 2.Worker node/Slaves node 
+
+## Creating four nodes Swarm cluster
  
- 1.Master node / Controller npde
+For this Docker cluster, I take four AWS EC2 Insatnce one of these Instane make Master-Node & remaining nodes make Worker-Node.
 
+![Screenshot 2024-02-15 154046](https://github.com/Pratikshinde55/DockerSwarm/assets/145910708/454417b7-ce3e-4def-b8c0-d9aaede85827)
+
+
+### Prerequisite:
  
- 2.Worker node / Slaves node 
+ 1.AWS account & EC2 Instance 
 
-☀️Creating four nodes Swarm cluster☀️
+ 2.In all four Instances install Docker and start service
 
- 
-In this practical Creating Docker cluster , we take four AWS insatnce one of that instane make Master node & remaining nodes make worker node.
+Install Docker command:
 
-   ![Screenshot 2024-02-15 154046](https://github.com/Pratikshinde55/DockerSwarm/assets/145910708/454417b7-ce3e-4def-b8c0-d9aaede85827)
+   yum install docker -y
 
+Start Docker services command:
 
-Prerequisite:
- 
- 
- 1.AWS account & Ec2 instance knowledge
+   systemctl start docker
 
- 
- 2.In all four instances install docker and start service
+Check Docker info command:
 
-       #yum install docker -y
-       #systemctl start docker
-       #docker info 
+   docker info 
 
 🏷️Step 1-
   Make one node master node ,the node which want to make master that node Ip address is required
