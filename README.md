@@ -67,51 +67,47 @@ Here Docker Swarm Cluster is created to check use "docker info" on the Master-No
           
 ![Screenshot 2024-02-15 162810](https://github.com/Pratikshinde55/DockerSwarm/assets/145910708/36a28ee3-7c56-4bac-bc12-55e1abd726f8)
 
+### Why use Docker swarm:
 
-⭐Why use Docker swarm ❓
-
-
-Swarm master node keep watching on Container or Task ,if any Container goes down for any reason or Fault occurs , Master node auto-matically create same task on any Node.This is known a"fault tolerance".
+Docker Swarm master node keep watching on Container or Task,if any Container goes down for any reason or Fault occurs, Master-Node auto-matically create same task on any Node.This is known a "fault tolerance".
    
-   
- 💫Load balancer & Scaling on Docker Swarm 💫
+- Load balancer & Scaling on Docker Swarm:-
 
-⚡Replication:
+### Replication:
 
+Swarm cluster give capability to make exact copy of task in another node this concept is called as Replication.
 
- Swarm cluster give capability to make exact copy of task in another node this concept is called as Replication.
+### Load Balancer:
 
-💥Load Balancer:
+Docker swarm give pre-created set-up of load balancer, In Docker Swarm 'Load balancer' term is "Service".
 
-
-Docker swarm give pre-created set-up of load balancer, In docker Swarm 'Load balancer'term is "Service".
 "Load Balancer=Service"
         
+Docker service(Load Balancer) is by default isolated,It can't connect outside world it only connect to Cluster nodes, But if we want to make connection to outside world, we use "--publish", patting, expose.
 
-Docker service (Load Balancer) is by default isolated ,It can't connect outside world it only connect to Cluster nodes, But if we want to make connection to outside world , we use"--publish",patting,expose.
-
-🌟Scaling :
-
+### Scaling :
 
 There are two types of Scaling Vertical scaling and Horizontal scaling,We use Horizontal scaling.
 
-
 Adding more containers or instance are called as 'Scale-out'& removing Containers or instances is called 'scale-in'.
 
+To start any service in cluster we use 'Master node', The master node tracks the status of tasks & monitors the health of the cluster.
 
-🔔To start any service in cluster we use 'Master node',The master node tracks the status of tasks & monitors the health of the cluster.
+## Steps - [Docker swarm service LoadBalancer]
 
-🏷️Steps -
- 
- 
- On Master node:(To start service'Load balancer)
+On Swarm Master node to start service Load balancer:
 
-    #docker service create --name myweb55 --publish 8080:80 vimal13/apache-webserver-php
+    docker service create --name myweb55 --publish 8080:80 vimal13/apache-webserver-php
     
 ![Screenshot 2024-02-15 163712](https://github.com/Pratikshinde55/DockerSwarm/assets/145910708/2ee50920-f644-46b8-b699-6d8282e656ed)
 
-      #docker service ls <<--- Check service ls
-      #docker service ps myweb55 <<-- this show where Task lauch
+Check service ls commnad:
+
+    docker service ls 
+
+ Check where Task lauch command:
+ 
+     docker service ps myweb55 
 
 For scale-out
 
