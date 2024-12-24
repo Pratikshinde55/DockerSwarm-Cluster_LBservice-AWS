@@ -35,7 +35,7 @@ Check Docker info command:
 
     docker info 
 
-## Step: 1 
+## Step: 1  [docker swarm create command ]
 
 Make one node Master-Node,the node which want to make Master that node Ip address is required in my case i want make master node IP of that instance 172.31.37.180 .
 
@@ -43,14 +43,13 @@ Make one node Master-Node,the node which want to make Master that node Ip addres
    
 Docker swarm init command is used to create cluster:
 
-   docker swarm init  --advertise-addr 172.31.37.180
+    docker swarm init  --advertise-addr 172.31.37.180
 
  ![Screenshot 2024-02-15 155752](https://github.com/Pratikshinde55/DockerSwarm/assets/145910708/fa8dafd9-f4f1-4983-85ec-88d8fca9f3c2)
 
+Here get one Token that paste in remaining Instance that want to be make Worker-Node.
 
-🔔Here get one Token that paste in remaining instance that want to be make worker node
-
-🏷️Step 2-
+## Step: 2
    
    
    Paste token in three instance (docker must be installed & service start)
