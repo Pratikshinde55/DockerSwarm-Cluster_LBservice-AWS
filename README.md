@@ -6,9 +6,8 @@ What is Docker swarm cluster:
 
 Cluster means having one or more Master Node and one or more worker node. The master node manage all worker/slave nodes.
  
- 1.Master node/Controller npde
-
- 2.Worker node/Slaves node 
+1.Master node/Controller npde
+2.Worker node/Slaves node 
 
 ## Creating four nodes Swarm cluster
  
