@@ -35,15 +35,15 @@ Check Docker info command:
 
     docker info 
 
-🏷️Step 1-
-  Make one node master node ,the node which want to make master that node Ip address is required
-  in my case i want make master node IP of that instance 172.31.37.180 .
-  Note:To check IP use "ifconfig" command , use eth0 IP to make Swarm cluster 
+## Step: 1 
+
+Make one node Master-Node,the node which want to make Master that node Ip address is required in my case i want make master node IP of that instance 172.31.37.180 .
+
+- Note: To check IP use "ifconfig" command, use eth0 IP to make Swarm cluster that is Linux public IP.
    
-  Docker swarm init command is used to make cluster
+Docker swarm init command is used to create cluster:
 
-
-      #docker swarm init  --advertise-addr 172.31.37.180
+   docker swarm init  --advertise-addr 172.31.37.180
 
  ![Screenshot 2024-02-15 155752](https://github.com/Pratikshinde55/DockerSwarm/assets/145910708/fa8dafd9-f4f1-4983-85ec-88d8fca9f3c2)
 
