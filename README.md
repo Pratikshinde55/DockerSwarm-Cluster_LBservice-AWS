@@ -81,7 +81,7 @@ Docker swarm give pre-created set-up of load balancer, In Docker Swarm 'Load bal
         
 Docker service(Load Balancer) is by default isolated,It can't connect outside world it only connect to Cluster nodes, But if we want to make connection to outside world, we use "--publish", patting, expose.
 
-### Scaling :
+### Scaling:
 
 There are two types of Scaling Vertical scaling and Horizontal scaling,We use Horizontal scaling.
 
